@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		.box{
+			background: url(2.jpg);
+			width: 150px;
+			height: 150px;
+			position: absolute;
+			left: 0px;
+			top: 0px;
+			transition: 1s;
+		}
+
+		.box2{
+			background: url(2.jpg);
+			width: 150px;
+			height: 150px;
+			position: absolute;
+			left: 0px;
+			top: 0px;
+			transition: 1s;
+		    margin-left: 170px;
+
+		}
+
+		.box3{
+			background: url(2.jpg);
+			width: 150px;
+			height: 150px;
+			position: absolute;
+			left: 0px;
+			top: 0px;
+			transition: 1s;
+		    margin-left: 400px;
+
+		}
+
+
+		.box4{
+			background: url(2.jpg);
+			width: 150px;
+			height: 150px;
+			position: absolute;
+			left: 0px;
+			top: 0px;
+			transition: 1s;
+		    margin-left: 600px;
+
+		}
+
+
+		.box5{
+			background: url(2.jpg);
+			width: 150px;
+			height: 150px;
+			position: absolute;
+			left: 0px;
+			top: 0px;
+			transition: 1s;
+		    margin-left: 800px;
+
+		}
+
+	</style>
+</head>
+<body>
+
+<div class="box"></div>
+<div class="box2">  </div>
+<div class="box3"></div>
+<div class="box4">  </div>
+<div class="box5"></div>
+<h4>Счет: <span class="text">0</span></h4>
+<script type="text/javascript">
+	let box =document.querySelector(".box")
+	let box2 =document.querySelector(".box2")
+	let box3 =document.querySelector(".box3")
+	let box4 =document.querySelector(".box4")
+	let box5 =document.querySelector(".box5")
+	let x = 0
+
+
+	let randomizer = function(arg) {
+		let random = Math.random() * arg
+		let round = Math.round(random)
+		return round;	
+	}
+
+	let movebox = function(){
+		box.style.left = randomizer(1000) + "px"
+		box.style.top = randomizer(800) + "px"
+		
+		box2.style.left = randomizer(1000) + "px"
+		box2.style.top = randomizer(800) + "px"
+
+		box3.style.left = randomizer(1000) + "px"
+		box3.style.top = randomizer(800) + "px"
+		
+		box4.style.left = randomizer(1000) + "px"
+		box4.style.top = randomizer(800) + "px"
+
+		box5.style.left = randomizer(1000) + "px"
+		box5.style.top = randomizer(800) + "px"
+
+		
+
+	
+			
+		box.onclick = function(){
+			box.style.display = "none"	
+			x = x + 1	
+			document.querySelector(".text").innerHTML = x
+		}
+	}
+		box2.onclick = function(){
+			box2.style.display = "none"	
+			x = x + 1	
+			document.querySelector(".text").innerHTML = x
+		}
+
+
+		box3.onclick = function(){
+			box3.style.display = "none"	
+			x = x + 1	
+			document.querySelector(".text").innerHTML = x
+		}
+
+
+		box4.onclick = function(){
+			box4.style.display = "none"	
+			x = x + 1	
+			document.querySelector(".text").innerHTML = x
+		}
+
+
+		box5.onclick = function(){
+			box5.style.display = "none"	
+			x = x + 1	
+			document.querySelector(".text").innerHTML = x
+		}
+
+
+
+
+
+	setInterval(movebox,1000)
+
+
+	//  let randomizer1 = function(arg) {
+	// 	let random = Math.random() * arg
+	//  	let round = Math.round(random)
+	//  	return round;
+	// }
+	 	
+	
+	//  let movebox1 = function(){
+	//  	box.style.left  =randomizer(1000) + "px"
+	//  	box.style.top = randomizer(800) + "px"
+
+	//  	box3.style.left = randomizer(1000) + "px"
+	// 	box3.style.top = randomizer(800) + "px"
+	
+
+
+	//  	box.onclick = function(){
+	//  		box.style.display = "none"
+	//  		x = x + 1
+	//  		document.querySelector(".text").innerHTML = x
+	//  	}
+
+
+		
+	
+	//  setInterval(movebox,1000)
+    
+ //     let movingY = function(){
+	//  	let random = Math.random() * 700
+	//  	let round = Math.round(random)
+	//  	box3.style.left = round + "px"
+		
+	//  		document.querySelector(".text").innerHTML = x
+	//  			x = x + 1	
+	//  	  			document.querySelector(".box3").onclick = function(){
+	//  					document.querySelector(".box3").style.display = "none"	
+	//  	}	
+	//  	}
+	
+	//  let movingV = function(){
+	//  	let random = Math.random() * 700
+	//  	let round = Math.round(random)
+	//  	box3.style.top = round + "px"
+		
+	//  }
+	// setInterval(movingY,1000)
+	//  setInterval(movingV,1000)
+    
+
+ //     let movingK = function(){
+	//  	let random = Math.random() * 700
+	//  	let round = Math.round(random)
+	//  	box4.style.left = round + "px"
+
+ // 		document.querySelector(".text").innerHTML = x
+	//  			x = x + 1	
+	//  	  			document.querySelector(".box4").onclick = function(){
+	//  					document.querySelector(".box4").style.display = "none"	
+	//  	}	
+	//  	}
+	
+
+	//  let movingD = function(){
+	//  	let random = Math.random() * 700
+ // 	let round = Math.round(random)
+	//  	box4.style.top = round + "px"
+		
+ // }
+	//  setInterval(movingK,1000)
+	//  setInterval(movingD,1000)
+    
+
+
+ //     let movingA = function(){
+	//  	let random = Math.random() * 700
+	//  	let round = Math.round(random)
+	//  	box5.style.left = round + "px"
+	
+	//  		document.querySelector(".text").innerHTML = x
+	//  			x = x + 1	
+	//  	  			document.querySelector(".box5").onclick = function(){
+	// document.querySelector(".box5").style.display = "none"	
+
+	//  	}
+	//  }
+
+	//  let movingQ = function(){
+	//  	let random = Math.random() * 700
+	//  	let round = Math.round(random)
+	//  	box5.style.top = round + "px"
+		
+	//  		document.querySelector(".text").innerHTML = x
+ // 			x = x + 1	
+	//  	  			document.querySelector(".box5").onclick = function(){
+	//  					document.querySelector(".box5").style.display = "none"		
+	//  	}
+
+	//  	}
+	
+	//  setInterval(movingS,1000)
+	//  setInterval(movingQ,1000)
+    
+
+
+
+
+</script>
+ 
+
+
+</body>
+</html>
